@@ -47,3 +47,13 @@ def doesRoomExist(roomNumber):
     elif userInput == "w":
         location -= 100
     return location
+
+def main():
+    location = 506
+    print("jukgtf")
+    print("by Kye, Yasmine, Miri, Kyle")
+    sleep(1)
+    while True:
+        print(str(roomArray[location]))
+        userInput = input("Please type: n, s, e, w, or quit: ")
+        location = move(userInput, location)
