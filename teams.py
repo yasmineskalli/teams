@@ -25,3 +25,14 @@ roomArray[306] = "you open a big cabinet and find a metal wrench to the south yo
 roomArray[406] = "to the east is the door to the hallway and to the west is a closed cabinet"
 roomArray[207] = "to the east you see something metallic on a table"
 roomArray[307] = "you find what appears to be a metal arm on a table, to the north you see a cabinet"
+
+def doesRoomExist(roomNumber):
+    try:
+        if roomArray[roomNumber] == False:
+            print("You can’t go there")
+            return False
+        else:
+            return True
+    except:
+        print("You can’t go there")
+        return False
