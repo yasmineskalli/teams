@@ -20,7 +20,7 @@ roomArray[804] = "You wander in the computer lab. You can see some sort of robot
 roomArray[705] = "You are walking inside of the computer lab. You see some sort of robot to the east, there are walls to the south and west."
 roomArray[805] = "You find a LEGOBot! It looks like this is being used to watch you... if I were you, I would watch out."
 #Engineering room
-roomArray[206] = "you are in the corner of the engineering room to the east you see a cabinet and wallls to the north and west."
+roomArray[206] = "you are in the corner of the engineering room, to the east you see a cabinet and walls are to the north and west."
 roomArray[306] = "you open a big cabinet and find a metal wrench to the south you see a table with something metallic on it and a wall to the north"
 roomArray[406] = "to the east is the door to the hallway and to the west is a closed cabinet and walls are to the north snd south"
 roomArray[207] = "to the east you see something metallic on a table and walls to the west and south"
