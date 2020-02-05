@@ -57,3 +57,74 @@ def main():
         print(str(roomArray[location]))
         userInput = input("Please type: n, s, e, w, or quit: ")
         location = move(userInput, location)
+
+itemArray[805] = "LegoBot"
+itemArray[704] = "Keyboard"
+itemArray[503] = "iPad"
+itemArray[505] = "Poster"
+itemArray[303] = "Baguette"
+itemArray[203] = "Eiffel Tower"
+itemArray[204] = "Beret"
+itemArray[304] = "Bidet"
+itemArray[306] = "Wrench"
+itemArray[307] = "Robot Arm"
+
+inventoryArray = []
+if location == 805:
+    print("do you want to pick up LegoBot? n or y?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("LegoBot")
+
+if location == 704:
+    print("do you want to pick up the Keyboard? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("Keyboard")
+
+if location == 503:
+    print("do you want to pick up the iPad? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("iPad")
+if location == 505:
+    print("do you want to pick up the poster? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("poster")
+
+if location == 303:
+    print("do you want to pick up the Baguette? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("Baguette")
+
+if location == 203:
+    print("do you want to pick up the Eiffel Tower? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("Eiffel Tower")
+
+if location == 204:
+    print("do you want to pick up the Beret? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("Beret")
+
+if location == 304:
+    print("do you want to pick up the Bidet? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("Bidet")
+
+if location == 306:
+    print("do you want to pick up the Wrench? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("Wrench")
+    
+if location == 307:
+    print("do you want to pick up the Robot Arm? y or n?")
+    answer = input()
+    if answer == "y":
+        inventoryArray.append("Robot Arm")
