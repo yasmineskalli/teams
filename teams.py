@@ -5,11 +5,16 @@ for i in range(999):
     roomArray.append(False)
     itemArray.append(False)
 #French room
-roomArray[203] = ""
-roomArray[303] = ""
-roomArray[204] = ""
-roomArray[304] = ""
-roomArray[403] = ""
+roomArray[203] = "You walked toward the steel structure, and now you're standing under a mini eiffel tower that really isn't that small. South you see a Beret, near an oven. Back east, the table you saw walking in is still there. North and South you're blocked off by walls."
+
+roomArray[303] = "As you walk into the room, you see a table with a freshly cooked Baguette on it. LOoking south, you see a toilet..? There is a wall up north, the hallway you entered in is south, west you get a closer view of the steel structure, and you see the Eiffel Tower!"
+
+roomArray[204] = "The oven looks like another Baguette is being cooked in it. There is a beret beside it, on a cutting board. North is the eiffel tower, east is a toilet, with no toilet paper.. Weird.. South and west are walls."
+
+roomArray[304] = "You walk towards the toilet, and notice a weird detachable contraption on the toilet. It says 'Bidet'? Looks useful. North is the table from the entrance, west is the oven. East and south are blocked off by walls."
+
+roomArray[403] = "From the hallway, you walk into the French room. You can only go forward, as there's a short hallway into the room. You see a Baguette to your west, and a huge steel structure farther west?"
+
 #Hallway
 roomArray[503] = ""
 roomArray[504] = ""
