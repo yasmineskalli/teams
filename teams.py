@@ -12,10 +12,10 @@ roomArray[304] = "You walk towards the toilet, and notice a weird detachable con
 roomArray[403] = "From the hallway, you walk into the French room. You can only go forward, as there's a short hallway into the room. You see a Baguette to your west, and a huge steel structure farther west?"
 
 #Hallway
-roomArray[503] = ""
-roomArray[504] = ""
-roomArray[505] = ""
-roomArray[506] = ""
+roomArray[503] = "you find an ipad on the floor. to your east is another anime club poster. to your west is the french classroom."
+roomArray[504] = "You find a a pair of headphones on the ground. To be honest, if I were you, I wouldn't trust them. They look kinda crusty. To your east is the computer lab."
+roomArray[505] = "To the east is a wall with another anime club poster."
+roomArray[506] = "You've entered the hallway. To your north and south are endless halls of doom. To the east is a wall with an anime club poster and to your west is the engineering room."
 #Computer lab
 roomArray[604] = "You're entering the computer lab. You see a computer to your east, there are walls to your north and south."
 roomArray[704] = "You see a computer. It looks like the person left some coding on the screen, there is a wall to your north."
