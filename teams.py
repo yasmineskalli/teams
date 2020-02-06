@@ -53,7 +53,10 @@ def move(userInput, location):
 
 def main():
     location = 506
-    print("jukgtf")
+   print("   __                                         __ ")                
+   print("  /  )           _/_                    /    /  )      /   _/_  ") 
+   print(" /--<  _  __  _  /  _     __.  ____  __/    /--<  o __/ _  /  _  ")
+   print("/___/_</_/ (_</_<__/_)_  (_/|_/ / <_(_/_   /___/_<_(_/_</_<__/_)_")
     print("by Kye, Yasmine, Miri, Kyle")
     sleep(1)
     while True:
