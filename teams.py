@@ -74,6 +74,7 @@ def main():
 while True:
         print(str(roomArray[location]))
         if itemArray[location] != False:
+            print("items in room: " + itemArray[location])
             userInput = input("Please type: n, s, e, w, take, or quit: ")
             if userInput == "take":
                 inventoryArray.append(itemArray[location])
