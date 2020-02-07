@@ -1,6 +1,7 @@
 from time import *
 roomArray = []
 itemArray = []
+inventoryArray = []
 for i in range(999):
     roomArray.append(False)
     itemArray.append(False)
