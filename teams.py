@@ -31,7 +31,11 @@ roomArray[306] = "you open a big cabinet and find a metal wrench to the south yo
 roomArray[406] = "to the east is the door to the hallway and to the west is a closed cabinet and walls are to the north snd south"
 roomArray[207] = "to the east you see something metallic on a table and walls to the west and south"
 roomArray[307] = "you find what appears to be a metal arm on a table, to the north you see a cabinet and you see walls to the east and south"
-
+#Secret Room
+roomArray[309] = "you are in an enclosed room, you have seemed to teleport, there are walls to your north and east."
+roomArray[209] = "you are wandering in the enclosed room, there are walls to your north and west."
+roomArray[210] = "You are wandering in an enclosed room, there are walls to your south and west."
+roomArray[310] = "You are wandering in an enclosed room, there are walls to your south and east."
 def doesRoomExist(roomNumber):
     try:
         if roomArray[roomNumber] == False:
@@ -75,7 +79,8 @@ def main():
     itemArray[304] = "Bidet"
     itemArray[306] = "Wrench"
     itemArray[307] = "Robot Arm"
-    
+    itemArray[209] = "Gold Key"
+
     while True:
         map.draw(roomArray, itemArray, location)
         print(roomArray[location])
