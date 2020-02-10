@@ -73,14 +73,14 @@ def main():
     itemArray[307] = "Robot Arm"
     while True:
 while True:
-        print(str(roomArray[location]))
+        print(roomArray[location])
         if itemArray[location] != False:
             print("items in room: " + itemArray[location])
             userInput = input("Please type: n, s, e, w, take, or quit: ")
             if userInput == "take":
                 inventoryArray.append(itemArray[location])
                 itemArray[location] = False
-        else: 
+        else:
             userInput = input("Please type: n, s, e, w, or quit: ")
         if userInput == "quit":
             print("thank you")
