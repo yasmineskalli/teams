@@ -86,10 +86,29 @@ def robotQuizGame():
                     print("You can continue")
                     quizCompleted = True
                     break
+                    
+def robotFightGame():
+    print("You see the LegoBot and it prepares to fight you to the death.")
+    bosshealth = randint(30,50)
+    while True:
+        userInput = input("Kick or Punch? ") 
+        if userInput == "Kick":
+            bosshealth -= 10
+        if userInput == "Punch":
+            bosshealth -= 5
+        if userInput != "Punch" and userInput != "Kick":
+            print("Not a valid input")
+        if bosshealth <= 0:
+            print("You have slain the LegoBot!")
+            bossDead = True 
+            break
+            
 def specialRooms():
     global location, quizCompleted, bossDead
     if location == 809 and quizCompleted == False:
         robotQuizGame()
+    if location == 805 and bossDead == False:
+        robotFightGame()
 def main():
     map = Map()
     location = 506
