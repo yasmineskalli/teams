@@ -1,5 +1,6 @@
 from time import *
 from map import *
+from random import *
 
 roomArray = []
 itemArray = []
@@ -57,7 +58,32 @@ def move(userInput, location):
     elif userInput == "w"and doesRoomExist(location - 100) == True:
         location -= 100
     return location
-
+def robotQuizGame():
+    print("Hello. You are now trapped to play my game. Guess a number 1 through 5, and if you are right you'll be free.")
+    randomNumber = randint(1, 5)
+    input1 = input()
+    while True:
+            print("Guess a number")
+            input1 = input()
+            input1 = int(input1)
+            if input1 < randomNumber:
+                print("The secret word is after" + str(input1))
+            if input1 > randomNumber:
+                print("The secret word is before" + str(input1))
+            if input1 == randomNumber:
+                print("You got it!!!!!")
+                print("Do you want to play again? y or n?")
+                input2 = input()
+                if input2 == "y" :
+                    robotQuizGame()
+                if input2 == "n" :
+                    print("You can continue")
+                    quizCompleted = True
+                    break
+def specialRooms():
+    global location, quizCompleted, bossDead
+    if location == 809 and quizCompleted == False:
+        robotQuizGame()
 def main():
     map = Map()
     location = 506
@@ -84,6 +110,7 @@ def main():
     while True:
         map.draw(roomArray, itemArray, location)
         print(roomArray[location])
+        specialRooms()
         if itemArray[location] != False:
             print("items in room: " + itemArray[location])
             userInput = input("Please type: n, s, e, w, take, or quit: ")
