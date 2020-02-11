@@ -14,12 +14,13 @@ roomArray[303] = "As you walk into the room, you see a table with a freshly cook
 roomArray[204] = "The oven looks like another Baguette is being cooked in it. There is a beret beside it, on a cutting board. North is the eiffel tower, east is a toilet, with no toilet paper.. Weird.. South and west are walls."
 roomArray[304] = "You walk towards the toilet, and notice a weird detachable contraption on the toilet. It says 'Bidet'? Looks useful. North is the table from the entrance, west is the oven. East and south are blocked off by walls."
 roomArray[403] = "From the hallway, you walk into the French room. You can only go forward, as there's a short hallway into the room. You see a Baguette to your west, and a huge steel structure farther west?"
-
 #Hallway
 roomArray[503] = "you find an ipad on the floor. to your east is another anime club poster. to your west is the french classroom."
 roomArray[504] = "You find a a pair of headphones on the ground. To be honest, if I were you, I wouldn't trust them. They look kinda crusty. To your east is the computer lab."
 roomArray[505] = "To the east is a wall with another anime club poster."
 roomArray[506] = "You've entered the hallway. To your north and south are endless halls of doom. To the east is a wall with an anime club poster and to your west is the engineering room."
+roomArray[507] = "You walk keep walking towards down the hallway, and it looks really empty. However, it kind of looks like theres a door farther SouthEast."
+roomArray[508] = "You walk, and there is a door to your east. It look like it has a keyhole, and the lights are off."
 #Computer lab
 roomArray[604] = "You're entering the computer lab. You see a computer to your east, there are walls to your north and south."
 roomArray[704] = "You see a computer. It looks like the person left some coding on the screen, there is a wall to your north."
@@ -32,11 +33,16 @@ roomArray[306] = "you open a big cabinet and find a metal wrench to the south yo
 roomArray[406] = "to the east is the door to the hallway and to the west is a closed cabinet and walls are to the north snd south"
 roomArray[207] = "to the east you see something metallic on a table and walls to the west and south"
 roomArray[307] = "you find what appears to be a metal arm on a table, to the north you see a cabinet and you see walls to the east and south"
-#Secret Room
+#teleport Room
 roomArray[309] = "you are in an enclosed room, you have seemed to teleport, there are walls to your north and east."
 roomArray[209] = "you are wandering in the enclosed room, there are walls to your north and west."
 roomArray[210] = "You are wandering in an enclosed room, there are walls to your south and west."
 roomArray[310] = "You are wandering in an enclosed room, there are walls to your south and east."
+#Locked room
+roomArray[708] = "Once you walk into the room, it is very empty. There is nothing to your south, or east, but a little robot southeast."
+roomArray[709] = "East is a small robot, and up north is where the door is."
+roomArray[808] = "South is a small robot, and west is back where the door is."
+roomArray[809] = "You have walked towards the small robot!"
 def doesRoomExist(roomNumber):
     try:
         if roomArray[roomNumber] == False:
