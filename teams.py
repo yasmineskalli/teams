@@ -150,3 +150,13 @@ def main():
             break
         
         location = move(userInput, location)
+def trueOrFalseKey():
+  if key in inventory[]:
+    print("congrats! you got in!")
+    location=location+1
+    else:
+    print("you don't have the key. go back and look for it.")   
+def lockedRoom():
+  if location == 608 :
+    trueOrFalseKey()
+    "you've entered the locked room!"
