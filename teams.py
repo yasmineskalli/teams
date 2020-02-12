@@ -103,13 +103,14 @@ def robotFightGame():
             bossDead = True 
             break
             
-def specialRooms():
-    global location, quizCompleted, bossDead
+def specialRooms(location,quizCompleted, bossDead):
     if location == 809 and quizCompleted == False:
         robotQuizGame()
     if location == 805 and bossDead == False:
         robotFightGame()
 def main():
+    quizCompleted = False
+    bossDead = False
     map = Map()
     location = 506
     print("   __                                         __ ")                
@@ -135,7 +136,7 @@ def main():
     while True:
         map.draw(roomArray, itemArray, location)
         print(roomArray[location])
-        specialRooms()
+        specialRooms(location,quizCompleted, bossDead)
         if itemArray[location] != False:
             print("items in room: " + itemArray[location])
             userInput = input("Please type: n, s, e, w, take, or quit: ")
